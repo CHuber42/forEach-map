@@ -21,14 +21,13 @@
     $("form#wordplay").submit(function(event) {
       event.preventDefault();
       var words = $("#sentenceEntry").val().split(" ");
-      var threeOrMore = [];
-
-      words.forEach(element => {
-        if (element.length >= 3) {
-          threeOrMore.push(element);
-        }
-                
-      });
+      var threeOrMore = words.filter(word => word.length >= 3);
+      
+  //  words.forEach(element => {
+  //      if (element.length >= 3) {
+  //        threeOrMore.push(element);
+  //      }
+  //   });
       console.log(threeOrMore);
       var finalSentence = (threeOrMore).reverse().join(" ");
       $("#finalWord").text(finalSentence);
