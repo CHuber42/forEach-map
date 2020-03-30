@@ -68,18 +68,10 @@
     } //else
     }); //for-each
   console.log(someDict);
+  
+    
+
 });
     
-  });
+});
 
-
- // wordCount [
- //   
- //   newdict = {};
-//    newdict["first"] = [2, 9, 12, 14];
- //   newdict["Second"] = 4;
-//
- //   if someword not in dict:
-//    newdict[someword] = counter (1);
- //   else
- //   newdict[someword] value += 1
