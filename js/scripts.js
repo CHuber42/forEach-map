@@ -35,5 +35,23 @@
     
     });
       
+    var suits = ["Hearts", "Spades", "Diamonds", "Clubs"];
+    var ranks = ["Ace", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King"];
+    var deck = [];
+
+    suits.forEach(suit => {
+    ranks.forEach(rank => {
+     
+        var card = (rank + " of " + suit);
+        deck.push(card);
+      });
+    });
+
+    deck.forEach(card => {
+      var cardEntry = document.createElement("li");
+      cardEntry.textContent = card;
+      $("#cards").append(cardEntry);
+    });
  
+    
   });
